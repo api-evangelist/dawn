@@ -1,7 +1,25 @@
 aid: dawn
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dawn.png
 name: Dawn
-description: Dawn is a company surfaced as a portfolio company of kindred-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Dawn (Sleepedy, Inc. dba Dawn) is a digital-health company offering a clinician-guided
+  Cognitive Behavioral Therapy for Insomnia (CBT-I) program delivered through a mobile app. The service
+  pairs users with licensed sleep coaches and therapists for weekly video sessions and between-session
+  chat, daily 5-7 minute sleep lessons, live sleep-performance insights, and weekly progress reports,
+  with the goal of treating primary and chronic insomnia and reducing reliance on sleep medication. Dawn
+  is in-network with major U.S. insurers (Aetna, Anthem, Cigna, United Healthcare, Blue Cross Blue Shield)
+  and offers an employer/enterprise workplace-wellness program. Backed by Kindred Ventures. Dawn publishes
+  a consumer app and marketing site but no public developer API, SDKs, or OpenAPI at this time.
 url: https://raw.githubusercontent.com/api-evangelist/dawn/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Digital Health
+- Healthcare
+- Sleep
+- Insomnia
+- CBT-I
+- Telehealth
+- Mental Health
+- Consumer Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dawn-domain-security.yml
 - type: Website
   url: https://dawn.health/
+- type: Blog
+  url: https://dawn.health/blog
+- type: Pricing
+  url: https://dawn.health/pricing
+- type: TermsOfService
+  url: https://dawn.health/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://dawn.health/legal/privacy-policy
+- type: Support
+  url: https://dawn.health/faq
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
